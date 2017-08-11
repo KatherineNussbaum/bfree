@@ -13,16 +13,26 @@
 
     </head>
     <body>
-
-        @include('admin.menu_superior')
-
         <div class="container-fluid">
 
-            @include('admin.menu_lateral')
-    
-        </div>
+                @include('admin.menu_superior')
+                
+            <div class="container">
+                @include('admin.menu_lateral')
+                
+                <div class="main">
+                    @yield('content')
+                </div>
+                
+                
+            </div>
+            
 
-        @yield('content')
+
+        </div>
+        
+
+        
 
 
 
