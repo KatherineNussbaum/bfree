@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('admin.cargo.cargos');
-});
+Route::get('/', 'PageAdminController@index');
+
+Route::get('/cargos', 'CargoController@index');

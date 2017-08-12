@@ -8,6 +8,14 @@ use Illuminate\Http\Requests\CreateCargoRequest;
 
 class CargoController extends Controller
 {
+	// Rutas
+
+	public function index()
+    {
+    	return view('admin.cargo.cargos');
+    }
+
+
     // crear cargo nuevo
     public function store(CreateCargoRequest $request)
     {
